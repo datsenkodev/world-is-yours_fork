@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 import { createSlice } from '@reduxjs/toolkit';
 
 export const wishlistSlice = createSlice({
@@ -11,12 +13,14 @@ export const wishlistSlice = createSlice({
     },
     addItem: (state, action) => {
       const id = action.payload;
+
       if (!state.items.includes(id)) {
         state.items.push(id);
       }
     },
     removeItem: (state, action) => {
       const id = action.payload;
+
       state.items = state.items.filter((item) => item !== id);
     },
     clearWishlist: (state) => {

@@ -1,5 +1,5 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-
 // Початковий стан фільтрів
 const initialState = {
   price: null,
