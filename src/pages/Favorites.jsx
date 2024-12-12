@@ -6,7 +6,7 @@ import { motion as m } from 'framer-motion';
 
 import Card from '@components/common/Card';
 import SkeletonCard from '@components/common/SkeletonCard.jsx';
-import Container from '@components/common/container';
+import Container from '@components/common/Container';
 
 import NotFound404 from './NotFound404';
 
